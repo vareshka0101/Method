@@ -1,9 +1,10 @@
 /* Использование reduce:
- Задача: У вас есть массив чисел. Используйте метод reduce, чтобы найти сумму всех чисел в массиве.*/
-const numbers = [1, 2, 3, 4];
-const sum = numbers.reduce(
+ Задача: У вас есть массив чисел. Используйте метод reduce, 
+ чтобы найти сумму всех чисел в массиве.*/
+const numb = [1, 2, 3, 4];
+const sum = numb.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   0
 );
 
-console.log(sum);
+console.log(`Сумма всех чисел в массиве: ${sum}`);
