@@ -4,6 +4,7 @@ const digit = [1, 3, 5, 7];
 
 const hasEvenNumber = digit.some((number) => number % 2 === 0);
 if (hasEvenNumber) {
-     console.log(`В данном массиве есть четные числа`);
+  console.log("В данном массиве есть четные числа");
+} else {
+  console.log("В данном массиве нет четных чисел");
 }
-  console.log(`В данном массиве нет четных чисел`);
