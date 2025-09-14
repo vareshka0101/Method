@@ -9,7 +9,7 @@ const students = [
 let names = "";
 
 students.forEach(function (student, index) {
-  names += student.name;
+  names += student.name;  
   if (index < students.length - 1) {
     names += ", ";
   }
