@@ -6,53 +6,38 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 20px;
+
 }
 
 #new-task-form {
+
     width: 500px;
     border: 1px solid #ccc;
     padding: 20px;
+
     display: flex;
     flex-wrap: wrap;
     background: #ec6e00;
+
 }
 
-/* Изменения для нумерованного списка */
 #task-list {
     list-style: none;
-    /* Удаляем стандартные маркеры списка */
     padding: 0;
     width: 100%;
-    counter-reset: task-counter;
-    /*  Инициализируем счетчик */
+
 }
 
 #task-list li {
     padding: 10px;
     border-bottom: 1px solid #eee;
     text-align: center;
-    position: relative;
-    /*  Делаем позиционирование относительным для псевдоэлемента */
-    padding-left: 30px;
-    /* Отступ для нумерации */
-}
-
-#task-list li::before {
-    counter-increment: task-counter;
-    /* Увеличиваем счетчик */
-    content: counter(task-counter) ".";
-    /* Отображаем номер */
-    position: absolute;
-    left: 47%;
-    top: 10px;
-    /* Выравниваем номер по вертикали */
-    font-weight: bold;
-    /* Делаем номер более заметным */
 }
 
 #task-list li:last-child {
@@ -64,6 +49,7 @@ h1 {
     flex-grow: 1;
     margin-right: 0;
     padding: 5px;
+
 }
 
 button {
@@ -74,4 +60,5 @@ button {
     background: #024184;
     color: #eee;
     border: none;
+
 }
